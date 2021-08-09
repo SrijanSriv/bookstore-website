@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+@import url('//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+@font-face {
+    font-family: 'belindaregular';
+    src: url('belinda-webfont.woff2') format('woff2'),
+         url('belinda-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {font-family: "BrandonGrotW01-Light"; src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot"); src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#BrandonGrotW01-Light") format("svg"); }
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'BrandonGrotW01-Light';
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.container .content .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .content .heading .navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-right: 55px;
+}
+.container .content .heading .navbar ul li{
+    margin: 15px;
+    padding: 5px;
+    list-style: none;
+    font: 20px;
+}
+.container .content .heading .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'BrandonGrotW01-Light';
+    font-weight: 400;
+}
+.container .content .heading .logo{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .heading .logo .logoname{
+    margin: 15px;
+    margin-bottom: 2px;
+    font-size: 30px;
+    font-family: 'WindSong', cursive;
+}
+.container .content .heading .logo a{
+    text-decoration: none;
+    color: black;
+}
+.content .body{
+    display: flex;
+    justify-content: center;
+}
+.content .body .cartbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content .body .cartbox .line{
+    background: rgb(211, 211, 211);
+    height: 1px;
+    width: 530px;
+    margin: 20px;
+    margin-left: 0px;
+}
+.content .body .cartbox .cart{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.content .body .cartbox .cart .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content .body .cartbox .cart .card .txt,.content .body .cartbox .cart .card .txt1,.content .body .cartbox .cart .card .txt2{
+    margin: 20px;
+}
+.content .body .cartbox .cart .card .txt span{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 0px;
+}
+.content .body .cartbox .cart .card .image{
+    background: rgb(230, 230, 230);
+    height: 240px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .body .cartbox .cart .card .image img{
+    width: 170px;
+    height: 200px;
+}
+.content .body .cartbox .cart .card .txt1{
+    border: 1px solid black;
+    height: 30px;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 8px;
+}
+.content .body .cartbox .cart .card .txt2{
+    font-weight: 100;
+    cursor: pointer;
+}
+.content .body .cartbox .orders{
+    margin: 40px;
+    margin-top: -310px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.content .body .cartbox .cart .coupons p{
+    font-size: 18px;
+    cursor: pointer;
+}
+.content .body .cartbox .orders .txt,
+.content .body .cartbox .orders .txt1,
+.content .body .cartbox .orders .txt2,
+.content .body .cartbox .orders .txt3{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+.content .body .cartbox .orders .txt span,
+.content .body .cartbox .orders .txt1 span,
+.content .body .cartbox .orders .txt2 span{
+    font-size: 18px;
+}
+.content .body .cartbox .orders .txt2 span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.content .body .cartbox .orders .btn button{
+    padding: 10px;
+    width: 200px;
+    color: white;
+    background: rgb(6, 6, 58);
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+.content .body .cartbox .orders .btn button i{
+    color: white;
+}
+.footer{
+    height: 40px;
+}
+@media (max-width : 1150px){
+    .content .body .cartbox{
+        width: 400px;
+    }
+    .content .body .cartbox .line{
+        width: 400px;
+    }
+    .content .body .cartbox .cart{
+        width: 450px;
+    }
+    .content .body .cartbox .order{
+        width: 450px;
+    }
+}

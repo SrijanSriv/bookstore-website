@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+@import url('//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+@font-face {
+    font-family: 'belindaregular';
+    src: url('belinda-webfont.woff2') format('woff2'),
+         url('belinda-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {font-family: "BrandonGrotW01-Light"; src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot"); src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#BrandonGrotW01-Light") format("svg"); }
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.container .content .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .content .heading .navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-right: 55px;
+}
+.container .content .heading .navbar ul li{
+    margin: 15px;
+    padding: 5px;
+    list-style: none;
+    font: 20px;
+}
+.container .content .heading .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'BrandonGrotW01-Light';
+    font-weight: 400;
+}
+.container .content .heading .logo{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .heading .logo .logoname{
+    margin: 15px;
+    margin-bottom: 2px;
+    font-size: 30px;
+    font-family: 'WindSong', cursive;
+}
+.container .content .heading .logo a{
+    text-decoration: none;
+    color: black;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .body .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .body .head .h{
+    font-size: 25px;
+    font-weight: 400;
+}
+.container .content .body .head .i{
+    font-size: 48px;
+    font-weight: 600;
+}
+.container .content .body .formbody{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    height: 140vh;
+    width: 95%;
+}
+.container .content .body .formbody .imgbx{
+    background: url('./pictures/img1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+.container .content .body .formbody .formbx{
+    background: cornflowerblue;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-left: 40px;
+    align-items: left;
+}
+.container .content .body .formbody .formbx div{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+.container .content .body .formbody .formbx div label{
+    margin: 6px;
+    font-size: 20px;
+    color: white;
+}
+.container .content .body .formbody .formbx div input{
+    width: 320px;
+    height: 35px;
+    text-align: center;
+}
+.container .content .body .formbody .formbx div input,.container .content .body .formbody .formbx div textarea{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 2px;
+}
+.container .content .body .formbody .formbx .comments{
+    display: flex;
+    flex-direction: column;
+}
+.container .content .body .formbody .formbx .comments textarea{
+    width: 450px;
+}
+.container .content .body .formbody .formbx .comments textarea::placeholder{
+    text-align: left;
+}
+.container .content .body .formbody .formbx .btn button{
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+}
+.container .content .body .formbody .formbx .btn button:hover{
+    background: white;
+    color: cornflowerblue;
+    border: cornflowerblue;
+    transition: 0.3s ease-in-out;
+}
+.footer{
+    height: 20px;
+}
+
+@media (max-width : 1200px){
+    .container .content .body .formbody .formbx .comments textarea{
+        width: 350px;
+    }
+}

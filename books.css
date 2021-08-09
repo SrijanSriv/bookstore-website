@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+@import url('//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+@font-face {
+    font-family: 'belindaregular';
+    src: url('belinda-webfont.woff2') format('woff2'),
+         url('belinda-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {font-family: "BrandonGrotW01-Light"; src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot"); src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#BrandonGrotW01-Light") format("svg"); }
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.container .content .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .content .heading .navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-right: 55px;
+}
+.container .content .heading .navbar ul li{
+    margin: 15px;
+    padding: 5px;
+    list-style: none;
+    font: 20px;
+}
+.container .content .heading .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'BrandonGrotW01-Light';
+    font-weight: 400;
+}
+.container .content .heading .logo{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .heading .logo .logoname{
+    margin: 15px;
+    margin-bottom: 2px;
+    font-size: 30px;
+    font-family: 'WindSong', cursive;
+}
+.container .content .heading .logo a{
+    text-decoration: none;
+    color: black;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .body .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .body .head .h{
+    font-size: 25px;
+    font-weight: 400;
+}
+.container .content .body .head .i{
+    font-size: 48px;
+    font-weight: 600;
+}
+.content .body .books-grid{
+    display: grid;
+    grid-template-columns: repeat(4,23vw);
+    height: 250vh;
+    width: 100%;
+    background: cornflowerblue;
+    margin-left: 0px;
+}
+.content .body .books-grid .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.content .body .books-grid .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34vh;
+    width: 60%;
+}
+.content .body .books-grid .card .txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+    font-family: 'BrandonGrotW01-Light';
+    font-weight: 800;
+}
+.content .body .books-grid .card .txt span{
+    margin: 5px;
+}
+.content .body .books-grid .card .btn button{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 215px;
+    font-family: 'BrandonGrotW01-Light';
+    font-weight: 800;
+    height: 40px;
+    font-size: 16px;
+}
+.content .body .books-grid .card .btn button:hover{
+    cursor: pointer;
+    background: white;
+    color: rgb(18,43,90);
+    transition: 1s;
+}
+.footer{
+    height: 40px;
+}
+

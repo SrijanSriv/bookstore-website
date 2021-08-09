@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+@import url('//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+@font-face {
+    font-family: 'belindaregular';
+    src: url('belinda-webfont.woff2') format('woff2'),
+         url('belinda-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {font-family: "BrandonGrotW01-Light"; src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot"); src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#BrandonGrotW01-Light") format("svg"); }
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.container .content .heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .content .heading .navbar ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-right: 55px;
+}
+.container .content .heading .navbar ul li{
+    margin: 15px;
+    padding: 5px;
+    list-style: none;
+    font: 20px;
+}
+.container .content .heading .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'BrandonGrotW01-Light';
+    font-weight: 400;
+}
+.container .content .heading .logo{
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.container .content .heading .logo .logoname{
+    margin: 15px;
+    margin-bottom: 2px;
+    font-size: 30px;
+    font-family: 'WindSong', cursive;
+}
+.container .content .heading .logo a{
+    text-decoration: none;
+    color: black;
+}
+.content .body .textbox{
+    background: url('./pictures/background.webp') no-repeat;
+    height: 65vh;
+    width: 96%;
+    padding: 30px;
+    padding-top: 0px;
+    margin: 40px;
+    margin-top: 0px;
+}
+.content .body .textbox .text{
+    font-size: 5.6rem;
+    color: white;
+    width: 25vw;
+    margin-left: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+.content .body .bestsellers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    width: 100%;
+}
+.content .body .bestsellers .head1{
+    font-size: 40px;
+    font-family: 'WindSong', cursive;
+    margin-bottom: 5px;
+}
+.content .body .bestsellers .head2{
+    font-size: 20px;
+}
+.content .body .books-grid{
+    display: grid;
+    grid-template-columns: repeat(6,16vw);
+    height: 50vh;
+}
+.content .body .books-grid .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.content .body .books-grid .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34vh;
+    width: 79%;
+}
+.content .body .books-grid .card .txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+    font-family: 'BrandonGrotW01-Light';
+    font-weight: 800;
+}
+.content .body .books-grid .card .txt span{
+    margin: 5px;
+}
+.content .body .books-grid .card .btn button{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 215px;
+    font-family: 'BrandonGrotW01-Light';
+    font-weight: 800;
+    height: 40px;
+    font-size: 16px;
+}
+.content .body .books-grid .card .btn button:hover{
+    cursor: pointer;
+    background: white;
+    color: rgb(18,43,90);
+    transition: 1s;
+}
+.bg{
+    background: rgb(18, 43, 90);
+    height: 120vh;
+    width: 100%;
+    margin-top: -300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .body .bg .text-box{
+    margin-top: 80px;
+    height: 10vh;
+    width: 50%;
+}
+.content .body .bg .text-box p{
+    color: white;
+    font-weight: 900;
+    font-size: 6rem;
+    text-align: center;
+}
+.footer{
+    height: 40px;
+}
+
+
+@media(max-width : 1350px){
+    .content .body{
+        width: 100%;
+    }
+    .content .body .textbox{
+        height: 68vh;
+        width: 100%;
+        background-size: cover;
+    }
+    .content .body .textbox .text{
+        font-size: 5.1rem;
+        color: white;
+        width: 35vw;
+        margin-left: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 800;
+    }
+    .content .body .books-grid{
+        display: grid;
+        grid-template-columns: repeat(3,30vw);
+        height: 50vh;
+        margin-right: 40px;
+    }
+    .content .body .books-grid .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 35px;
+        margin-left: 60px;
+    }
+    .bg{
+        background: rgb(18, 43, 90);
+        height: 200vh;
+        width: 100%;
+        margin-top: -300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content .body .bg .text-box{
+        margin-top: 180px;
+        height: 10vh;
+        width: 50%;
+    }
+}
